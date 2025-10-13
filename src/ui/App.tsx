@@ -56,11 +56,13 @@ import DirectionApiSetting from '../settings/DirectionApiSetting';
 import DirectionWidget from './widgets/DirectionWidget';
 import DirectionWidgetSetting from '../settings/DirectionWidgetSetting';
 import NearByWidget from './widgets/NearByWidget';
+import GeoFenceWidget from './widgets/GeoFenceWidget';
 
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function App() {
+
 
   return (
     <SafeAreaProvider>
@@ -118,7 +120,7 @@ function App() {
           <Stack.Screen name='DirectionWidget' component={DirectionWidget} />
           <Stack.Screen name='DirectionWidgetSetting' component={DirectionWidgetSetting} />
           <Stack.Screen name='NearByWidget' component={NearByWidget} />
-
+          <Stack.Screen name='GeoFenceWidget' component={GeoFenceWidget}/>
 
         </Stack.Navigator>
       </NavigationContainer>

@@ -78,6 +78,7 @@ export type RootStackParamList = {
     DirectionWidgetSetting: undefined;
     DirectionWidget: undefined;
     NearByWidget:undefined;
+    GeoFenceWidget:undefined;
 };
 
 export const menuItems = [
@@ -374,22 +375,18 @@ export const widgetsData: ComponentItem[] = [
         image: require('../assets/map.png'),
         screen:'DirectionWidget'
     },
-    // {
-    //     title: 'GeoFence Widget',
-    //     subtitle: 'Highly customizable UI widget to create/edit geofence widget',
-    //     image: require('../assets/map.png'),
-    // },
+    {
+        title: 'GeoFence Widget',
+        subtitle: 'Highly customizable UI widget to create/edit geofence widget',
+        image: require('../assets/map.png'),
+        screen:'GeoFenceWidget'
+    },
     {
         title: 'Nearby Widget',
         subtitle: 'Mappls Nearby Widget to search nearby result on map',
         image: require('../assets/map.png'),
         screen:'NearByWidget'
     },
-    // {
-    //     title: 'Feedback Widget',
-    //     subtitle: 'Mappls Feedback Widget to give Feedback',
-    //     image: require('../assets/map.png'),
-    // },
 
 ];
 

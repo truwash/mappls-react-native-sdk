@@ -45,8 +45,9 @@ target 'MapplsRNDemo' do
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     $MAPPLS_MAPS.post_install(installer)
     $MAPPLS_SEARCH_WIDGETS.post_install(installer)
-    $MAPPLS_NEARBY_WIDGETS.post_install(installer)
+    $MAPPLS_TRACKING_WIDGET.post_install(installer)
     $MAPPLS_DIRECTION_WIDGETS.post_install(installer)
+    $MAPPLS_NEARBY_WIDGETS.post_install(installer)
     $MAPPLS_GEOFENCE_WIDGETS.post_install(installer)
     react_native_post_install(
       installer,
